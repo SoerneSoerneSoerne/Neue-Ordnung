@@ -1,0 +1,208 @@
+﻿
+PBM = { # Teutonic Order
+	flag_definition = {
+		coa = PBM_FLAG
+		subject_canton = PBM_FLAG
+		priority = 100
+	}
+}
+
+GGV = { # Teutonic Order
+	flag_definition = {
+		coa = GGV_FLAG
+		subject_canton = GGV_FLAG
+		priority = 100
+	}
+}
+
+RKU = { # Teutonic Order
+	flag_definition = {
+		coa = RKU_FLAG
+		subject_canton = RKU_FLAG
+		priority = 100
+	}
+}
+
+RKO = { # Teutonic Order
+	flag_definition = {
+		coa = RKO_FLAG
+		subject_canton = RKO_FLAG
+		priority = 100
+	}
+}
+
+RKM = { # Teutonic Order
+	flag_definition = {
+		coa = RKM_FLAG
+		subject_canton = RKM_FLAG
+		priority = 100
+	}
+}
+
+RKK = { # Teutonic Order
+	flag_definition = {
+		coa = RKK_FLAG
+		subject_canton = RKK_FLAG
+		priority = 100
+	}
+}
+
+RKD = { # Teutonic Order
+	flag_definition = {
+		coa = RKD_FLAG
+		subject_canton = RKD_FLAG
+		priority = 100
+	}
+}
+
+RKE = { # Teutonic Order
+	flag_definition = {
+		coa = RKE_FLAG
+		subject_canton = RKE_FLAG
+		priority = 100
+	}
+}
+
+RKA = { # Teutonic Order
+	flag_definition = {
+		coa = RKA_FLAG
+		subject_canton = RKA_FLAG
+		priority = 100
+	}
+}
+
+RKN = { # Teutonic Order
+	flag_definition = {
+		coa = RKN_FLAG
+		subject_canton = RKN_FLAG
+		priority = 100
+	}
+}
+
+RKB = { # Teutonic Order
+	flag_definition = {
+		coa = RKB_FLAG
+		subject_canton = RKB_FLAG
+		priority = 100
+	}
+}
+
+RKS = { # Teutonic Order
+	flag_definition = {
+		coa = RKS_FLAG
+		subject_canton = RKS_FLAG
+		priority = 100
+	}
+}
+
+MBV = { # Teutonic Order
+	flag_definition = {
+		coa = MBV_FLAG
+		subject_canton = MBV_FLAG
+		priority = 100
+	}
+}
+
+ITL = { # Teutonic Order
+	flag_definition = {
+		coa = ITL_FLAG
+		subject_canton = ITL_FLAG
+		priority = 100
+	}
+}
+
+SAU = { # Teutonic Order
+	flag_definition = {
+		coa = SAU_FLAG
+		subject_canton = SAU_FLAG
+		priority = 100
+	}
+}
+
+RSA = { # Teutonic Order
+	flag_definition = {
+		coa = RSA_FLAG
+		subject_canton = RSA_FLAG
+		priority = 100
+	}
+}
+
+ROA = { # Teutonic Order
+	flag_definition = {
+		coa = ROA_FLAG
+		subject_canton = ROA_FLAG
+		priority = 100
+	}
+}
+
+RZA = { # Teutonic Order
+	flag_definition = {
+		coa = RZA_FLAG
+		subject_canton = RZA_FLAG
+		priority = 100
+	}
+}
+
+GMA = { # Teutonic Order
+	flag_definition = {
+		coa = GMA_FLAG
+		subject_canton = GMA_FLAG
+		priority = 100
+	}
+}
+
+ITE = { # Teutonic Order
+	flag_definition = {
+		coa = ITE_FLAG
+		subject_canton = ITE_FLAG
+		priority = 100
+	}
+}
+
+AFA = { # Teutonic Order
+	flag_definition = {
+		coa = AFA_FLAG
+		subject_canton = AFA_FLAG
+		priority = 100
+	}
+}
+
+FFR = { # Teutonic Order
+	flag_definition = {
+		coa = FFR_FLAG
+		subject_canton = FFR_FLAG
+		priority = 100
+	}
+}
+
+IBA = { # Teutonic Order
+	flag_definition = {
+		coa = IBA_FLAG
+		subject_canton = IBA_FLAG
+		priority = 100
+	}
+}
+
+IAL = { # Teutonic Order
+	flag_definition = {
+		coa = IAL_FLAG
+		subject_canton = IAL_FLAG
+		priority = 100
+	}
+}
+
+NZI = { # Teutonic Order
+	flag_definition = {
+		coa = NZI_FLAG
+		subject_canton = NZI_FLAG
+		priority = 100
+	}
+	flag_definition = {
+		coa = NZI_FLAG_DEMOCRATIC
+		subject_canton = NZI_FLAG_DEMOCRATIC
+		priority = 110
+		trigger = { 
+			coa_def_multicultural_trigger = yes
+		}
+	}
+}

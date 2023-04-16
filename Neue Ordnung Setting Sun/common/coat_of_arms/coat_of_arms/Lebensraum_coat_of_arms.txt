@@ -1,0 +1,269 @@
+
+PBM_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_bundm.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+GGV_FLAG = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_generalgv.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RKU_FLAG = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_reichukr.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RKO_FLAG = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_reichost.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RKM_FLAG = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_reichmos.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RKK_FLAG = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_reichkau.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RKD_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_reichdon.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RKE_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_reichura.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RKA_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_reichnor.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RKN_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_reichhol.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RKB_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_reichburg.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RKS_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_reichserb.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+MBV_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_reichbrit.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+ITL_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_italylevant.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+SAU_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_saudiarabia.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RSA_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_sudwestafrika.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+ROA_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_ostafrika.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+RZA_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_zentralafrika.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+ITE_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_italianafrica.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+FFR_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_freefrance.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+IBA_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_spainalgeria.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+IAL_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_italyalgeria.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+GMA_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_madagaskar.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+IBE_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_iberia.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+
+AFA_FLAG = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+}
+
+NZI_FLAG = {
+	pattern = "pattern_border_grossreich.dds"
+    color1 = "red"
+    color2 = "white"
+
+    textured_emblem  = {
+        texture = "te_coa_grossreich.dds"
+        instance = { scale = { 1 1 } position = { 0.495 0.485 } }
+    }
+}
+
+NZI_FLAG_DEMOCRATIC = {
+	pattern = "pattern_border_demoreich.dds"
+    color1 = "red"
+    color2 = "yellow"
+	color3 = "black"
+
+    textured_emblem  = {
+        texture = "te_coa_demoreich.dds"
+        instance = { scale = { 1 1 } position = { 0.495 0.485 } }
+    }
+}

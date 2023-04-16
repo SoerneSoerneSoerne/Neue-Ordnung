@@ -1,0 +1,206 @@
+﻿PBM = { ### Böhmen und Mähren
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_BOHEMIA
+}
+
+GGV = { ### Generalgouvernement
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_WEST_GALICIA
+}
+
+RKU = { ### Ukraine
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_KIEV
+}
+
+RKO = { ### Ostland
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_LATVIA
+}
+
+RKM = { ### Moskowien
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_MOSCOW
+}
+
+RKK = { ### Kaukasien
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_KUBAN
+}
+
+RKD = { ### Dänemark
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_ZEALAND
+}
+
+RKE = { ### Ural
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_PERM
+}
+
+RKA = { ### Norwegen
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_EASTERN_NORWAY
+}
+
+RKN = { ### Niederlande
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_HOLLAND
+}
+
+RKB = { ### Burgundy
+	color = { 0 0 0 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_CHAMPAGNE
+}
+
+MBV = { ### Militärverwaltung der Britischen Inseln
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_PLYMOUTH
+}
+
+RSA = { ### Reichskommissariat Südwestafrika
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_HEREROLAND
+}
+
+ROA = { ### Reichskommissariat Ostafrika
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_ZANZIBAR
+}
+
+RZA = { ### Reichskommissariat Zentralafrika
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_BAS_CONGO
+}
+
+GMA = { ### Reichsprotektorat Madagaskar
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_german south_german }
+	capital = STATE_NORTH_MADAGASCAR
+}
+
+
+ITL = { ### Governatorato del Levante
+	color = { 73  152  76 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_italian south_italian }
+	capital = STATE_PALESTINE
+}
+
+ITE = { ### Africa Orientale Italiana
+	color = { 73  152  76 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_italian south_italian }
+	capital = STATE_OROMIA
+}
+
+IAL = { ### Forze Italiane in Algeria
+	color = { 73  152  76 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { north_italian south_italian }
+	capital = STATE_CONSTANTINE
+}
+
+RKS = { ### Serbia
+	color = { 147 130 110 }
+	tier = hegemony
+	country_type = colonial
+	cultures = { serb }
+	capital = STATE_NORTHERN_SERBIA
+}
+
+SAU = { ### Saudi Arabia
+	color = { 209 219 116}
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	capital = STATE_NEJD
+}
+
+AFA = { ### African Anarchy
+	color = { 0 0 0 }
+	tier = principality
+	country_type = unrecognized
+	cultures = { mossi mande }
+	capital = STATE_CHAD
+}
+
+FFR = { ### Free France
+	color = { 25  96  240 }
+	tier = principality
+	country_type = unrecognized
+	cultures = { french }
+	capital = STATE_IVORY_COAST
+}
+
+IBA = {
+	color = hsv360{ 38  97  83 }
+	
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { spanish }
+	capital = STATE_TLEMCEN
+}
+
+NZI = { ### Großgermanisches Reich
+	color = { 50 51 50 }
+	tier = hegemony
+	country_type = recognized
+	cultures = { north_german south_german }
+	capital = STATE_BRANDENBURG
+}

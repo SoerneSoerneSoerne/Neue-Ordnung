@@ -1,0 +1,16 @@
+﻿on_monthly_pulse_country = {
+	events = {
+		Lebensraum_event.1
+		Lebensraum_event.2
+		Lebensraum_event.3
+		Lebensraum_event.4
+		Lebensraum_event.5
+		Lebensraum_event.6
+		Lebensraum_event.7
+		Lebensraum_event.8
+		Lebensraum_event.9
+		Lebensraum_event.10
+		Lebensraum_event.11
+		Lebensraum_event.12
+	}
+}

@@ -1,0 +1,52 @@
+﻿NZI = {
+	use_culture_states = no
+	
+	is_major_formation = no
+	
+	states = { 
+        STATE_STYRIA
+        STATE_AUSTRIA
+		STATE_TYROL
+		STATE_BAVARIA
+		STATE_FRANCONIA
+		STATE_WURTTEMBERG
+		STATE_BADEN
+		STATE_ALSACE_LORRAINE
+		STATE_RHINELAND
+		STATE_NORTH_RHINE
+		STATE_SAXONY
+		STATE_HESSE
+		STATE_WESTPHALIA
+		STATE_HANNOVER
+		STATE_BRUNSWICK
+		STATE_ELBE
+		STATE_ANHALT
+		STATE_BRANDENBURG
+		STATE_SCHLESWIG_HOLSTEIN
+		STATE_MECKLENBURG
+		STATE_POMERANIA
+		STATE_SILESIA
+		STATE_POSEN
+		STATE_WEST_PRUSSIA
+		STATE_EAST_PRUSSIA
+		STATE_BOHEMIA
+		STATE_MORAVIA
+		STATE_LODZ
+		STATE_PLOCK
+		STATE_BIALYSTOK
+		STATE_SLOVENIA
+		STATE_LUXEMBURG
+	}
+
+	unification_play = Formable_Nations_diplomatic_play_Unify_Grossreich
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Grossreich
+
+	required_states_fraction = 1.00
+	
+	ai_will_do = { always = no }
+
+	possible = {	
+			has_technology_researched = nationalism
+			is_player = yes
+	}
+}

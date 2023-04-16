@@ -1,0 +1,4 @@
+﻿sick_lebensraum = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_prestige_mult = -0.50
+}
