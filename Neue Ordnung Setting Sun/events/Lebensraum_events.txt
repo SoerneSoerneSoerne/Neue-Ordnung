@@ -1,0 +1,453 @@
+﻿namespace = Lebensraum_event
+
+Lebensraum_event.1 = { ### Boehmen
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.1.t desc = Lebensraum_event.1.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:PBM }
+		NOT = { has_variable = Lebensraum_event_1_end_flag }
+		owns_entire_state_region = STATE_BOHEMIA
+		owns_entire_state_region = STATE_MORAVIA
+	}
+	immediate = { set_variable = Lebensraum_event_1_end_flag }
+	option = { name = Lebensraum_event.1.o1
+		create_country = { tag = PBM origin = c:NZI
+			state = s:STATE_BOHEMIA.region_state:NZI
+			state = s:STATE_MORAVIA.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:PBM = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	} 
+}
+
+Lebensraum_event.2 = { ### Polen
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.2.t desc = Lebensraum_event.2.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:GGV }
+		NOT = { has_variable = Lebensraum_event_2_end_flag }
+		owns_entire_state_region = STATE_WEST_GALICIA
+		owns_entire_state_region = STATE_EAST_GALICIA
+		owns_entire_state_region = STATE_LESSER_POLAND
+		owns_entire_state_region = STATE_GREATER_POLAND
+		owns_entire_state_region = STATE_MAZOVIA
+	}
+	immediate = { set_variable = Lebensraum_event_2_end_flag }
+	option = { name = Lebensraum_event.2.o1
+		create_country = { tag = GGV origin = c:NZI
+			state = s:STATE_WEST_GALICIA.region_state:NZI
+			state = s:STATE_EAST_GALICIA.region_state:NZI
+			state = s:STATE_LESSER_POLAND.region_state:NZI
+			state = s:STATE_GREATER_POLAND.region_state:NZI
+			state = s:STATE_MAZOVIA.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:GGV = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	}
+}
+
+Lebensraum_event.3 = { ### Ukraine
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.3.t desc = Lebensraum_event.3.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:RKU }
+		NOT = { has_variable = Lebensraum_event_3_end_flag }
+		owns_entire_state_region = STATE_VOLHYNIA
+		owns_entire_state_region = STATE_KIEV
+		owns_entire_state_region = STATE_CHERSON
+		owns_entire_state_region = STATE_LUHANSK
+	}
+	immediate = { set_variable = Lebensraum_event_3_end_flag }
+	option = { name = Lebensraum_event.3.o1
+		create_country = { tag = RKU origin = c:NZI
+			state = s:STATE_VOLHYNIA.region_state:NZI
+			state = s:STATE_KIEV.region_state:NZI
+			state = s:STATE_CHERSON.region_state:NZI
+			state = s:STATE_LUHANSK.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:RKU = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	}
+}
+
+Lebensraum_event.4 = { ### Ostland
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.4.t desc = Lebensraum_event.4.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:RKO }
+		NOT = { has_variable = Lebensraum_event_4_end_flag }
+		owns_entire_state_region = STATE_LATVIA
+		owns_entire_state_region = STATE_ESTONIA
+		owns_entire_state_region = STATE_LITHUANIA
+		owns_entire_state_region = STATE_BREST
+		owns_entire_state_region = STATE_MINSK
+		owns_entire_state_region = STATE_ORSHA
+	}
+	immediate = { set_variable = Lebensraum_event_4_end_flag }
+	option = { name = Lebensraum_event.4.o1
+		create_country = { tag = RKO origin = c:NZI
+			state = s:STATE_LATVIA.region_state:NZI
+			state = s:STATE_ESTONIA.region_state:NZI
+			state = s:STATE_LITHUANIA.region_state:NZI
+			state = s:STATE_BREST.region_state:NZI
+			state = s:STATE_MINSK.region_state:NZI
+			state = s:STATE_ORSHA.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:RKO = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	}
+}
+
+Lebensraum_event.5 = { ### Moskau
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.5.t desc = Lebensraum_event.5.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:RKM }
+		NOT = { has_variable = Lebensraum_event_5_end_flag }
+		owns_entire_state_region = STATE_INGRIA
+		owns_entire_state_region = STATE_NOVGOROD
+		owns_entire_state_region = STATE_SMOLENSK
+		owns_entire_state_region = STATE_BRYANSK
+		owns_entire_state_region = STATE_TARTARIA
+		owns_entire_state_region = STATE_MOSCOW
+		owns_entire_state_region = STATE_TVER
+		owns_entire_state_region = STATE_ROSTOV
+		owns_entire_state_region = STATE_ASTRAKHAN
+		owns_entire_state_region = STATE_KURSK
+	}
+	immediate = { set_variable = Lebensraum_event_5_end_flag }
+	option = { name = Lebensraum_event.5.o1
+		create_country = { tag = RKM origin = c:NZI
+			state = s:STATE_INGRIA.region_state:NZI
+			state = s:STATE_NOVGOROD.region_state:NZI
+			state = s:STATE_SMOLENSK.region_state:NZI
+			state = s:STATE_BRYANSK.region_state:NZI
+			state = s:STATE_TARTARIA.region_state:NZI
+			state = s:STATE_MOSCOW.region_state:NZI
+			state = s:STATE_TVER.region_state:NZI
+			state = s:STATE_ROSTOV.region_state:NZI
+			state = s:STATE_ASTRAKHAN.region_state:NZI
+			state = s:STATE_KURSK.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:RKM = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	}
+}
+
+Lebensraum_event.6 = { ### Kaukasien
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.6.t desc = Lebensraum_event.6.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:RKK }
+		NOT = { has_variable = Lebensraum_event_6_end_flag }
+		owns_entire_state_region = STATE_ARMENIA
+		owns_entire_state_region = STATE_GREATER_CAUCASUS
+		owns_entire_state_region = STATE_AZERBAIJAN
+		owns_entire_state_region = STATE_DAGESTAN
+		owns_entire_state_region = STATE_KUBAN
+	}
+	immediate = { set_variable = Lebensraum_event_6_end_flag }
+	option = { name = Lebensraum_event.6.o1
+		create_country = { tag = RKK origin = c:NZI
+			state = s:STATE_ARMENIA.region_state:NZI
+			state = s:STATE_GREATER_CAUCASUS.region_state:NZI
+			state = s:STATE_AZERBAIJAN.region_state:NZI
+			state = s:STATE_DAGESTAN.region_state:NZI
+			state = s:STATE_KUBAN.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:RKK = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	}
+}
+
+Lebensraum_event.7 = { ### Daenemark
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.7.t desc = Lebensraum_event.7.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:RKD }
+		NOT = { has_variable = Lebensraum_event_7_end_flag }
+		owns_entire_state_region = STATE_JUTLAND
+		owns_entire_state_region = STATE_ZEALAND
+	}
+	immediate = { set_variable = Lebensraum_event_7_end_flag }
+	option = { name = Lebensraum_event.7.o1
+		create_country = { tag = RKD origin = c:NZI
+			state = s:STATE_JUTLAND.region_state:NZI
+			state = s:STATE_ZEALAND.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:RKD = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	}
+}
+
+Lebensraum_event.8 = { ### URAL
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.8.t desc = Lebensraum_event.8.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:RKE }
+		NOT = { has_variable = Lebensraum_event_8_end_flag }
+		owns_entire_state_region = STATE_URALSK
+		owns_entire_state_region = STATE_SAMARA
+		owns_entire_state_region = STATE_URAL
+		owns_entire_state_region = STATE_PERM
+		owns_entire_state_region = STATE_NENETSIA
+		owns_entire_state_region = STATE_KAZAN
+		owns_entire_state_region = STATE_GALICH
+		owns_entire_state_region = STATE_ARKHANGELSK
+	}
+	immediate = { set_variable = Lebensraum_event_8_end_flag }
+	option = { name = Lebensraum_event.8.o1
+		create_country = { tag = RKE origin = c:NZI
+			state = s:STATE_URALSK.region_state:NZI
+			state = s:STATE_SAMARA.region_state:NZI
+			state = s:STATE_URAL.region_state:NZI
+			state = s:STATE_PERM.region_state:NZI
+			state = s:STATE_NENETSIA.region_state:NZI
+			state = s:STATE_KAZAN.region_state:NZI
+			state = s:STATE_GALICH.region_state:NZI
+			state = s:STATE_ARKHANGELSK.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:RKE = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	}
+}
+
+Lebensraum_event.9 = { ### Norwegen
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.9.t desc = Lebensraum_event.9.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:RKA }
+		NOT = { has_variable = Lebensraum_event_9_end_flag }
+		owns_entire_state_region = STATE_WESTERN_NORWAY
+		owns_entire_state_region = STATE_EASTERN_NORWAY
+		owns_entire_state_region = STATE_NORTHERN_NORWAY
+	}
+	immediate = { set_variable = Lebensraum_event_9_end_flag }
+	option = { name = Lebensraum_event.9.o1
+		create_country = { tag = RKA origin = c:NZI
+			state = s:STATE_WESTERN_NORWAY.region_state:NZI
+			state = s:STATE_EASTERN_NORWAY.region_state:NZI
+			state = s:STATE_NORTHERN_NORWAY.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:RKA = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	}
+}
+
+Lebensraum_event.10 = { ### Niederlande
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.10.t desc = Lebensraum_event.10.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:RKN }
+		NOT = { has_variable = Lebensraum_event_10_end_flag }
+		owns_entire_state_region = STATE_HOLLAND
+		owns_entire_state_region = STATE_FRIESLAND
+		owns_entire_state_region = STATE_GELRE
+	}
+	immediate = { set_variable = Lebensraum_event_10_end_flag }
+	option = { name = Lebensraum_event.10.o1
+		create_country = { tag = RKN origin = c:NZI
+			state = s:STATE_HOLLAND.region_state:NZI
+			state = s:STATE_FRIESLAND.region_state:NZI
+			state = s:STATE_GELRE.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:RKN = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	}
+}
+
+Lebensraum_event.11 = { ### Burgundy
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.11.t desc = Lebensraum_event.11.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:RKB }
+		NOT = { has_variable = Lebensraum_event_11_end_flag }
+		owns_entire_state_region = STATE_FRANCHE_COMTE
+		owns_entire_state_region = STATE_PICARDY
+		owns_entire_state_region = STATE_CHAMPAGNE
+		owns_entire_state_region = STATE_BESANCON
+		owns_entire_state_region = STATE_FLANDERS
+		owns_entire_state_region = STATE_WALLONIA
+	}
+	immediate = { set_variable = Lebensraum_event_11_end_flag }
+	option = { name = Lebensraum_event.11.o1
+		create_country = { tag = RKB origin = c:NZI
+			state = s:STATE_FRANCHE_COMTE.region_state:NZI
+			state = s:STATE_PICARDY.region_state:NZI
+			state = s:STATE_CHAMPAGNE.region_state:NZI
+			state = s:STATE_BESANCON.region_state:NZI
+			state = s:STATE_FLANDERS.region_state:NZI
+			state = s:STATE_WALLONIA.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:RKB = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	}
+}
+
+Lebensraum_event.12 = { ### Serbia
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Lebensraum_event.12.t desc = Lebensraum_event.12.d flavor = Lebensraum_event.1.f
+	event_image = { video = "gfx/event_pictures/southamerica_public_figure_assassination.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { exists = c:RKS }
+		NOT = { has_variable = Lebensraum_event_12_end_flag }
+		owns_entire_state_region = STATE_NORTHERN_SERBIA
+		owns_entire_state_region = STATE_SOUTHERN_SERBIA
+		owns_entire_state_region = STATE_WEST_BANAT
+	}
+	immediate = { set_variable = Lebensraum_event_12_end_flag }
+	option = { name = Lebensraum_event.12.o1
+		create_country = { tag = RKS origin = c:NZI
+			state = s:STATE_NORTHERN_SERBIA.region_state:NZI
+			state = s:STATE_SOUTHERN_SERBIA.region_state:NZI
+			state = s:STATE_WEST_BANAT.region_state:NZI
+			on_created = {
+				c:NZI = { create_diplomatic_pact = { country = PREV type = puppet } }
+				c:RKS = { add_modifier = { name = sick_lebensraum } }
+			}
+		}
+	}
+	option = { name = Lebensraum_event.1.o2
+		default_option = yes
+	}
+}
+
+
