@@ -1,0 +1,101 @@
+﻿nzi_mission_1 = { #mission is a simple just journal entry
+	icon = "gfx/interface/icons/event_icons/event_nzi1.dds"
+	
+	is_shown_when_inactive = { #MAKE SURE THIS IS TRUE IF THE MISSION SHOULD BE SHOWN
+		exists = c:NZI
+		c:NZI = root
+	}
+	
+	possible = { #This is what completes the mission
+				game_date > 1960.2.1
+	}
+	
+	complete = { #PURELY COSMETIC TRIGGERS, this is only used so that it says 'on completion' rather than 'on activation' in the mission tt
+						game_date > 1960.2.1
+		hidden_trigger = { #THIS IS VERY IMPORTANT, if the mission completes it will dissapear forever
+			always = no
+		}
+	}
+	
+	immediate = { #Mission effects
+		trigger_event = Germancivilwar_event.1
+	}
+}
+
+nzi_mission_2 = {
+	icon = "gfx/interface/icons/event_icons/event_nzi2.dds"
+	
+	is_shown_when_inactive = {
+		exists = c:NZI
+		c:NZI = root
+	}
+	
+	possible = {
+		game_date > 1960.4.1
+	}
+	
+	complete = {
+		      game_date > 1960.4.1
+		hidden_trigger = {
+			always = no
+		}
+	}
+	
+	immediate = {
+		trigger_event = Germancivilwar_event.2
+	}
+}
+
+nzi_mission_3 = {
+	icon = "gfx/interface/icons/event_icons/event_nzi3.dds"
+	
+	is_shown_when_inactive = {
+		exists = c:NZI
+		c:NZI = root
+	}
+	
+	possible = {
+		game_date > 1960.10.1
+	}
+	
+	complete = {
+		      game_date > 1960.10.1
+		hidden_trigger = {
+			always = no
+		}
+	}
+	
+	immediate = {
+		trigger_event = Germancivilwar_event.3
+	}
+}
+
+nzi_mission_4 = {
+	icon = "gfx/interface/icons/event_icons/event_nzi4.dds"
+	
+	is_shown_when_inactive = {
+		exists = c:NZI
+		c:NZI = root
+	}
+	
+	possible = {
+		game_date > 1960.10.14
+	}
+	
+	complete = {
+		      game_date > 1960.10.14
+		hidden_trigger = {
+			always = no
+		}
+	}
+	
+	immediate = {
+		trigger_event = Germancivilwar_event.4
+		trigger_event = Germancivilwar_event.5
+		trigger_event = Germancivilwar_event.6
+		trigger_event = Germancivilwar_event.7
+		trigger_event = Germancivilwar_event.8
+		trigger_event = Germancivilwar_event.9
+		trigger_event = Germancivilwar_event.10
+	}
+}

@@ -1,0 +1,77 @@
+rkm_mission_1 = { #mission is a simple just journal entry
+	icon = "gfx/interface/icons/event_icons/event_civilfire.dds"
+	
+	is_shown_when_inactive = { #MAKE SURE THIS IS TRUE IF THE MISSION SHOULD BE SHOWN
+		exists = c:RKM
+		c:RKM = root
+	}
+	
+	possible = { #This is what completes the mission
+						exists = c:BGF
+						exists = c:SSG
+						exists = c:GFF
+						exists = c:WEH
+						exists = c:GNZ
+						exists = c:GLF
+						exists = c:SPG
+	}
+	
+	complete = { #PURELY COSMETIC TRIGGERS, this is only used so that it says 'on completion' rather than 'on activation' in the mission tt
+		custom_tooltip = {
+			text = "custom_tt_3"
+		}
+						exists = c:BGF
+						exists = c:SSG
+						exists = c:GFF
+						exists = c:WEH
+						exists = c:GNZ
+						exists = c:GLF
+						exists = c:SPG
+		hidden_trigger = { #THIS IS VERY IMPORTANT, if the mission completes it will dissapear forever
+			always = no
+		}
+	}
+	
+	immediate = { #Mission effects
+		trigger_event = Moskauuprising_event.1
+		trigger_event = Moskauuprising_event.6
+		trigger_event = Moskauuprising_event.7
+		trigger_event = Moskauuprising_event.8
+	}
+}
+
+rkm_mission_2 = { #mission is a simple just journal entry
+	icon = "gfx/interface/icons/event_icons/event_civilfire.dds"
+	
+	is_shown_when_inactive = { #MAKE SURE THIS IS TRUE IF THE MISSION SHOULD BE SHOWN
+		exists = c:RKM
+		c:RKM = root
+	}
+	
+	possible = { #This is what completes the mission
+						exists = c:KLM
+						exists = c:FRR
+						exists = c:SPF
+						exists = c:DON
+	}
+	
+	complete = { #PURELY COSMETIC TRIGGERS, this is only used so that it says 'on completion' rather than 'on activation' in the mission tt
+		custom_tooltip = {
+			text = "custom_tt_3"
+		}
+						exists = c:KLM
+						exists = c:FRR
+						exists = c:SPF
+						exists = c:DON
+		hidden_trigger = { #THIS IS VERY IMPORTANT, if the mission completes it will dissapear forever
+			always = no
+		}
+	}
+	
+	immediate = { #Mission effects
+		trigger_event = Moskauuprising_event.2
+		trigger_event = Moskauuprising_event.3
+		trigger_event = Moskauuprising_event.4
+		trigger_event = Moskauuprising_event.5
+	}
+}

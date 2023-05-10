@@ -1,0 +1,69 @@
+rko_mission_1 = { #mission is a simple just journal entry
+	icon = "gfx/interface/icons/event_icons/event_civilfire.dds"
+	
+	is_shown_when_inactive = { #MAKE SURE THIS IS TRUE IF THE MISSION SHOULD BE SHOWN
+		exists = c:RKO
+		c:RKO = root
+	}
+	
+	possible = { #This is what completes the mission
+						exists = c:BGF
+						exists = c:SSG
+						exists = c:GFF
+						exists = c:WEH
+						exists = c:GNZ
+						exists = c:GLF
+						exists = c:SPG
+	}
+	
+	complete = { #PURELY COSMETIC TRIGGERS, this is only used so that it says 'on completion' rather than 'on activation' in the mission tt
+		custom_tooltip = {
+			text = "custom_tt_3"
+		}
+						exists = c:BGF
+						exists = c:SSG
+						exists = c:GFF
+						exists = c:WEH
+						exists = c:GNZ
+						exists = c:GLF
+						exists = c:SPG
+		hidden_trigger = { #THIS IS VERY IMPORTANT, if the mission completes it will dissapear forever
+			always = no
+		}
+	}
+	
+	immediate = { #Mission effects
+		trigger_event = Ostlanduprising_event.1
+		trigger_event = Ostlanduprising_event.4
+	}
+}
+
+rko_mission_2 = { #mission is a simple just journal entry
+	icon = "gfx/interface/icons/event_icons/event_civilfire.dds"
+	
+	is_shown_when_inactive = { #MAKE SURE THIS IS TRUE IF THE MISSION SHOULD BE SHOWN
+		exists = c:RKO
+		c:RKO = root
+	}
+	
+	possible = { #This is what completes the mission
+						exists = c:UBD
+						exists = c:BYE
+	}
+	
+	complete = { #PURELY COSMETIC TRIGGERS, this is only used so that it says 'on completion' rather than 'on activation' in the mission tt
+		custom_tooltip = {
+			text = "custom_tt_3"
+		}
+						exists = c:UBD
+						exists = c:BYE
+		hidden_trigger = { #THIS IS VERY IMPORTANT, if the mission completes it will dissapear forever
+			always = no
+		}
+	}
+	
+	immediate = { #Mission effects
+		trigger_event = Ostlanduprising_event.3
+		trigger_event = Ostlanduprising_event.2
+	}
+}

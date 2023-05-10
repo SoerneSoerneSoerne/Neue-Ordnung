@@ -1,0 +1,413 @@
+﻿country_mission_id = { #corresponds to the journal entry's mission id, if equal mission will be shown
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+			   AND = {
+			    exists = c:SPG
+				this = c:SPG
+				exists = c:GNZ
+				this = c:GNZ
+				exists = c:GLF
+				this = c:GLF
+				exists = c:BGF
+				this = c:BGF
+				exists = c:WEH
+				this = c:WEH
+				exists = c:SSG
+				this = c:SSG
+				exists = c:GFF
+				this = c:GFF
+				exists = c:GGV
+				this = c:GGV
+				exists = c:RKO
+				this = c:RKO
+				exists = c:RKU
+				this = c:RKU
+				exists = c:RKM
+				this = c:RKM
+				exists = c:RKK
+				this = c:RKK
+				exists = c:NZI
+				this = c:NZI
+				}
+			}
+		}
+		localization_key = mission_key_1
+	}
+
+	text = {
+		localization_key = mission_key_no_missions
+	}
+}
+
+journal_mission_id = { #corresponds to the country's mission id, used to confirm that it should be shown
+	type = journal_entry
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = c:NZI.je:nzi_mission_1
+					this = c:NZI.je:nzi_mission_1
+				}
+				AND = {
+					exists = c:NZI.je:nzi_mission_2
+					this = c:NZI.je:nzi_mission_2
+				}
+				AND = {
+					exists = c:NZI.je:nzi_mission_4
+					this = c:NZI.je:nzi_mission_4
+				}
+				AND = {
+					exists = c:NZI.je:nzi_mission_3
+					this = c:NZI.je:nzi_mission_3
+				}
+				
+				
+				AND = {
+					exists = c:SPG.je:spg_mission_1
+					this = c:SPG.je:spg_mission_1
+				}
+				
+				AND = {
+					exists = c:GNZ.je:gnz_mission_1
+					this = c:GNZ.je:gnz_mission_1
+				}
+				
+				AND = {
+					exists = c:GLF.je:glf_mission_1
+					this = c:GLF.je:glf_mission_1
+				}
+				
+				AND = {
+					exists = c:BGF.je:bgf_mission_1
+					this = c:BGF.je:bgf_mission_1
+				}
+				
+				AND = {
+					exists = c:WEH.je:weh_mission_1
+					this = c:WEH.je:weh_mission_1
+				}
+				
+				AND = {
+					exists = c:SSG.je:ssg_mission_1
+					this = c:SSG.je:ssg_mission_1
+				}
+				
+				AND = {
+					exists = c:GFF.je:gff_mission_1
+					this = c:GFF.je:gff_mission_1
+				}
+				
+				AND = {
+					exists = c:GGV.je:ggv_mission_1
+					this = c:GGV.je:ggv_mission_1
+				}
+				AND = {
+					exists = c:GGV.je:ggv_mission_2
+					this = c:GGV.je:ggv_mission_2
+				}
+				
+				AND = {
+					exists = c:RKO.je:rko_mission_1
+					this = c:RKO.je:rko_mission_1
+				}
+				AND = {
+					exists = c:RKO.je:rko_mission_2
+					this = c:RKO.je:rko_mission_2
+				}
+				
+				AND = {
+					exists = c:RKU.je:rku_mission_1
+					this = c:RKU.je:rku_mission_1
+				}
+				AND = {
+					exists = c:RKU.je:rku_mission_2
+					this = c:RKU.je:rku_mission_2
+				}
+				
+				AND = {
+					exists = c:RKM.je:rkm_mission_1
+					this = c:RKM.je:rkm_mission_1
+				}
+				AND = {
+					exists = c:RKK.je:rkk_mission_2
+					this = c:RKK.je:rkk_mission_2
+				}
+			}
+		}
+		localization_key = mission_key_1
+	}
+	text = {
+		localization_key = mission_key_not_mission
+	}
+}
+
+journal_mission_col = { #defines the column that the mission is in
+	type = journal_entry
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+               always = no
+			}
+		}
+		localization_key = mission_key_col_1
+	}
+	
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = c:NZI.je:nzi_mission_2
+					this = c:NZI.je:nzi_mission_2
+				}
+				AND = {
+					exists = c:NZI.je:nzi_mission_3
+					this = c:NZI.je:nzi_mission_3
+				}
+				AND = {
+					exists = c:NZI.je:nzi_mission_1
+					this = c:NZI.je:nzi_mission_1
+				}
+				AND = {
+					exists = c:NZI.je:nzi_mission_4
+					this = c:NZI.je:nzi_mission_4
+				}
+				
+				
+				AND = {
+					exists = c:SPG.je:spg_mission_1
+					this = c:SPG.je:spg_mission_1
+				}
+				
+				AND = {
+					exists = c:GNZ.je:gnz_mission_1
+					this = c:GNZ.je:gnz_mission_1
+				}
+				
+				AND = {
+					exists = c:GLF.je:glf_mission_1
+					this = c:GLF.je:glf_mission_1
+				}
+				
+				AND = {
+					exists = c:BGF.je:bgf_mission_1
+					this = c:BGF.je:bgf_mission_1
+				}
+				
+				AND = {
+					exists = c:WEH.je:weh_mission_1
+					this = c:WEH.je:weh_mission_1
+				}
+				
+				AND = {
+					exists = c:SSG.je:ssg_mission_1
+					this = c:SSG.je:ssg_mission_1
+				}
+				
+				AND = {
+					exists = c:GFF.je:gff_mission_1
+					this = c:GFF.je:gff_mission_1
+				}
+				
+				AND = {
+					exists = c:GGV.je:ggv_mission_1
+					this = c:GGV.je:ggv_mission_1
+				}
+				AND = {
+					exists = c:GGV.je:ggv_mission_2
+					this = c:GGV.je:ggv_mission_2
+				}
+				
+				AND = {
+					exists = c:RKO.je:rko_mission_1
+					this = c:RKO.je:rko_mission_1
+				}
+				AND = {
+					exists = c:RKO.je:rko_mission_2
+					this = c:RKO.je:rko_mission_2
+				}
+				
+				AND = {
+					exists = c:RKU.je:rku_mission_1
+					this = c:RKU.je:rku_mission_1
+				}
+				AND = {
+					exists = c:RKU.je:rku_mission_2
+					this = c:RKU.je:rku_mission_2
+				}
+				
+				AND = {
+					exists = c:RKM.je:rkm_mission_1
+					this = c:RKM.je:rkm_mission_1
+				}
+				AND = {
+					exists = c:RKM.je:rkm_mission_2
+					this = c:RKM.je:rkm_mission_2
+				}
+				
+				AND = {
+					exists = c:RKK.je:rkk_mission_1
+					this = c:RKK.je:rkk_mission_1
+				}
+				AND = {
+					exists = c:RKK.je:rkk_mission_2
+					this = c:RKK.je:rkk_mission_2
+				}
+			}
+		}
+		localization_key = mission_key_col_2
+	}
+	
+	text = {
+		trigger = {
+			OR = {
+				always = no
+			}
+		}
+		localization_key = mission_key_col_3
+	}
+
+	text = {
+		localization_key = mission_key_not_mission
+	}
+}
+
+###ARROWS###
+
+journal_down_right = { #directly down and one space right
+	type = journal_entry
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				always = no
+			}
+		}
+		localization_key = mission_key_yes
+	}
+	text = {
+		localization_key = mission_key_no
+	}
+}
+
+journal_down_left = { #directly down and one space left
+	type = journal_entry
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+                  always = no
+				}
+			}
+		}
+		localization_key = mission_key_yes
+	}
+	text = {
+		localization_key = mission_key_no
+	}
+}
+
+journal_down = { #arrow to mission directly one space down
+	type = journal_entry
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					always = no
+				}
+			}
+		}
+		localization_key = mission_key_yes
+	}
+	text = {
+		localization_key = mission_key_no
+	}
+}
+
+journal_down = { #arrow to mission directly one space down
+	type = journal_entry
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					always = no
+				}
+			}
+		}
+		localization_key = mission_key_yes
+	}
+	text = {
+		localization_key = mission_key_no
+	}
+}
+
+journal_down = { #arrow to mission directly one space down
+	type = journal_entry
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					always = no
+				}
+			}
+		}
+		localization_key = mission_key_yes
+	}
+	text = {
+		localization_key = mission_key_no
+	}
+}
+
+journal_down_big = { #skipped space, with arrow going through it (from mission 2 to 4 in example)
+	type = journal_entry
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					always = no
+				}
+			}
+		}
+		localization_key = mission_key_yes
+	}
+	text = {
+		localization_key = mission_key_no
+	}
+}
+
+###EMPTY SPACE###
+
+journal_down_big_no_arrow = { #skipped space no arrow 
+	type = journal_entry
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				always = no
+			}
+		}
+		localization_key = mission_key_yes
+	}
+	text = {
+		localization_key = mission_key_no
+	}
+}
