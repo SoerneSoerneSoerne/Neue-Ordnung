@@ -1,0 +1,189 @@
+namespace = Kaukasienuprising_event
+
+Kaukasienuprising_event.2 = { ###  Civil War Start Event Polishuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Kaukasienuprising_event.2.t desc = Kaukasienuprising_event.2.d flavor = Kaukasienuprising_event.2.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKK
+		c:RKK = ROOT
+		NOT = { has_variable = Kaukasienuprising_event_2_end_flag }
+	}
+	immediate = { set_variable = Kaukasienuprising_event_2_end_flag }
+	option = { name = Kaukasienuprising_event.2.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:DON
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Kaukasienuprising_event.3 = { ###  Civil War Start Event Polishuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Kaukasienuprising_event.3.t desc = Kaukasienuprising_event.3.d flavor = Kaukasienuprising_event.3.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKK
+		c:RKK = ROOT
+		NOT = { has_variable = Kaukasienuprising_event_3_end_flag }
+	}
+	immediate = { set_variable = Kaukasienuprising_event_3_end_flag }
+	option = { name = Kaukasienuprising_event.3.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:CHC
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Kaukasienuprising_event.4 = { ###  Civil War Start Event Polishuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Kaukasienuprising_event.4.t desc = Kaukasienuprising_event.4.d flavor = Kaukasienuprising_event.4.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKK
+		c:RKK = ROOT
+		NOT = { has_variable = Kaukasienuprising_event_4_end_flag }
+	}
+	immediate = { set_variable = Kaukasienuprising_event_4_end_flag }
+	option = { name = Kaukasienuprising_event.4.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:GEO
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Kaukasienuprising_event.5 = { ###  Civil War Start Event Polishuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Kaukasienuprising_event.5.t desc = Kaukasienuprising_event.5.d flavor = Kaukasienuprising_event.5.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKK
+		c:RKK = ROOT
+		NOT = { has_variable = Kaukasienuprising_event_5_end_flag }
+	}
+	immediate = { set_variable = Kaukasienuprising_event_5_end_flag }
+	option = { name = Kaukasienuprising_event.5.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:AZB
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Kaukasienuprising_event.1 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Kaukasienuprising_event.1.t desc = Kaukasienuprising_event.1.d flavor = Kaukasienuprising_event.1.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKK
+		c:RKK = ROOT
+		NOT = { has_variable = Kaukasienuprising_event_1_end_flag }
+	}
+	immediate = { set_variable = Kaukasienuprising_event_1_end_flag }
+	option = { name = Kaukasienuprising_event.1.o1
+	    default_option = yes
+		create_country = { tag = CHC origin = c:RKK
+			state = s:STATE_DAGESTAN.region_state:RKK
+			}
+		}
+	option = { name = Kaukasienuprising_event.1.o2
+		  	create_country = { tag = CHC origin = c:RKK
+			state = s:STATE_DAGESTAN.region_state:RKK
+			}
+			play_as = c:CHC
+	} 
+}
+
+Kaukasienuprising_event.6 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Kaukasienuprising_event.6.t desc = Kaukasienuprising_event.6.d flavor = Kaukasienuprising_event.6.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKK
+		c:RKK = ROOT
+		NOT = { has_variable = Kaukasienuprising_event_6_end_flag }
+	}
+	immediate = { set_variable = Kaukasienuprising_event_6_end_flag }
+	option = { name = Kaukasienuprising_event.6.o1
+	    default_option = yes
+		create_country = { tag = GEO origin = c:RKK
+			state = s:STATE_GREATER_CAUCASUS.region_state:RKK
+			}
+		}
+	option = { name = Kaukasienuprising_event.6.o2
+		  	create_country = { tag = GEO origin = c:RKK
+			state = s:STATE_GREATER_CAUCASUS.region_state:RKK
+			}
+			play_as = c:GEO
+	} 
+}
+
+Kaukasienuprising_event.7 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Kaukasienuprising_event.7.t desc = Kaukasienuprising_event.7.d flavor = Kaukasienuprising_event.7.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKK
+		c:RKK = ROOT
+		NOT = { has_variable = Kaukasienuprising_event_7_end_flag }
+	}
+	immediate = { set_variable = Kaukasienuprising_event_7_end_flag }
+	option = { name = Kaukasienuprising_event.7.o1
+	    default_option = yes
+		create_country = { tag = AZB origin = c:RKK
+			state = s:STATE_AZERBAIJAN.region_state:RKK
+			}
+		}
+	option = { name = Kaukasienuprising_event.7.o2
+		  	create_country = { tag = AZB origin = c:RKK
+			state = s:STATE_AZERBAIJAN.region_state:RKK
+			}
+			play_as = c:AZB
+	} 
+}

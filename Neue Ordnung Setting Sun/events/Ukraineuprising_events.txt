@@ -1,0 +1,57 @@
+namespace = Ukraineuprising_event
+
+Ukraineuprising_event.2 = { ###  Civil War Start Event Ukraineuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Ukraineuprising_event.2.t desc = Ukraineuprising_event.2.d flavor = Ukraineuprising_event.2.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKU
+		c:RKU = ROOT
+		NOT = { has_variable = Ukraineuprising_event_2_end_flag }
+	}
+	immediate = { set_variable = Ukraineuprising_event_2_end_flag }
+	option = { name = Ukraineuprising_event.2.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:UKR
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Ukraineuprising_event.1 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Ukraineuprising_event.1.t desc = Ukraineuprising_event.1.d flavor = Ukraineuprising_event.1.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKU
+		c:RKU = ROOT
+		NOT = { has_variable = Ukraineuprising_event_1_end_flag }
+	}
+	immediate = { set_variable = Ukraineuprising_event_1_end_flag }
+	option = { name = Ukraineuprising_event.1.o1
+	    default_option = yes
+		create_country = { tag = UKR origin = c:RKU
+			state = s:STATE_KIEV.region_state:RKU
+			state = s:STATE_LUHANSK.region_state:RKU
+			}
+		}
+	option = { name = Ukraineuprising_event.1.o2
+		  	create_country = { tag = UKR origin = c:RKU
+			state = s:STATE_KIEV.region_state:RKU
+			state = s:STATE_LUHANSK.region_state:RKU
+			}
+			play_as = c:UKR
+	} 
+}

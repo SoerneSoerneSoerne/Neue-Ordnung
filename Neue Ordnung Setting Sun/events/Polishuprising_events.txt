@@ -1,0 +1,59 @@
+namespace = Polishuprising_event
+
+Polishuprising_event.2 = { ###  Civil War Start Event Polishuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Polishuprising_event.2.t desc = Polishuprising_event.2.d flavor = Polishuprising_event.2.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:GGV
+		c:GGV = ROOT
+		NOT = { has_variable = Polishuprising_event_2_end_flag }
+	}
+	immediate = { set_variable = Polishuprising_event_2_end_flag }
+	option = { name = Polishuprising_event.2.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:POL
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Polishuprising_event.1 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Polishuprising_event.1.t desc = Polishuprising_event.1.d flavor = Polishuprising_event.1.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:GGV
+		c:GGV = ROOT
+		NOT = { has_variable = Polishuprising_event_1_end_flag }
+	}
+	immediate = { set_variable = Polishuprising_event_1_end_flag }
+	option = { name = Polishuprising_event.1.o1
+	    default_option = yes
+		create_country = { tag = POL origin = c:GGV
+			state = s:STATE_LESSER_POLAND.region_state:GGV
+			state = s:STATE_MAZOVIA.region_state:GGV
+			state = s:STATE_EAST_GALICIA.region_state:GGV
+			}
+		}
+	option = { name = Polishuprising_event.1.o2
+		  	create_country = { tag = POL origin = c:GGV
+			state = s:STATE_LESSER_POLAND.region_state:GGV
+			state = s:STATE_MAZOVIA.region_state:GGV
+			state = s:STATE_EAST_GALICIA.region_state:GGV
+			}
+			play_as = c:POL
+	} 
+}

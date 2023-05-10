@@ -1,0 +1,223 @@
+namespace = Moskauuprising_event
+
+Moskauuprising_event.2 = { ###  Civil War Start Event Polishuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Moskauuprising_event.2.t desc = Moskauuprising_event.2.d flavor = Moskauuprising_event.2.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKM
+		c:RKM = ROOT
+		NOT = { has_variable = Moskauuprising_event_2_end_flag }
+	}
+	immediate = { set_variable = Moskauuprising_event_2_end_flag }
+	option = { name = Moskauuprising_event.2.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:KLM
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Moskauuprising_event.3 = { ###  Civil War Start Event Polishuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Moskauuprising_event.3.t desc = Moskauuprising_event.3.d flavor = Moskauuprising_event.3.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKM
+		c:RKM = ROOT
+		NOT = { has_variable = Moskauuprising_event_3_end_flag }
+	}
+	immediate = { set_variable = Moskauuprising_event_3_end_flag }
+	option = { name = Moskauuprising_event.3.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:DON
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Moskauuprising_event.4 = { ###  Civil War Start Event Polishuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Moskauuprising_event.4.t desc = Moskauuprising_event.4.d flavor = Moskauuprising_event.4.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKM
+		c:RKM = ROOT
+		NOT = { has_variable = Moskauuprising_event_4_end_flag }
+	}
+	immediate = { set_variable = Moskauuprising_event_4_end_flag }
+	option = { name = Moskauuprising_event.4.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:SPF
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Moskauuprising_event.5 = { ###  Civil War Start Event Polishuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Moskauuprising_event.5.t desc = Moskauuprising_event.5.d flavor = Moskauuprising_event.5.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKM
+		c:RKM = ROOT
+		NOT = { has_variable = Moskauuprising_event_5_end_flag }
+	}
+	immediate = { set_variable = Moskauuprising_event_5_end_flag }
+	option = { name = Moskauuprising_event.5.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:FRR
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Moskauuprising_event.1 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Moskauuprising_event.1.t desc = Moskauuprising_event.1.d flavor = Moskauuprising_event.1.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKM
+		c:RKM = ROOT
+		NOT = { has_variable = Moskauuprising_event_1_end_flag }
+	}
+	immediate = { set_variable = Moskauuprising_event_1_end_flag }
+	option = { name = Moskauuprising_event.1.o1
+	    default_option = yes
+		create_country = { tag = KLM origin = c:RKM
+			state = s:STATE_ASTRAKHAN.region_state:RKM
+			}
+		}
+	option = { name = Moskauuprising_event.1.o2
+		  	create_country = { tag = KLM origin = c:RKM
+			state = s:STATE_ASTRAKHAN.region_state:RKM
+			}
+			play_as = c:KLM
+	} 
+}
+
+Moskauuprising_event.6 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Moskauuprising_event.6.t desc = Moskauuprising_event.6.d flavor = Moskauuprising_event.6.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKM
+		c:RKM = ROOT
+		NOT = { has_variable = Moskauuprising_event_6_end_flag }
+	}
+	immediate = { set_variable = Moskauuprising_event_6_end_flag }
+	option = { name = Moskauuprising_event.6.o1
+	    default_option = yes
+		create_country = { tag = DON origin = c:RKM
+			state = s:STATE_ROSTOV.region_state:RKM
+			}
+		}
+	option = { name = Moskauuprising_event.6.o2
+		  	create_country = { tag = DON origin = c:RKM
+			state = s:STATE_ROSTOV.region_state:RKM
+			}
+			play_as = c:DON
+	} 
+}
+
+Moskauuprising_event.7 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Moskauuprising_event.7.t desc = Moskauuprising_event.7.d flavor = Moskauuprising_event.7.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKM
+		c:RKM = ROOT
+		NOT = { has_variable = Moskauuprising_event_7_end_flag }
+	}
+	immediate = { set_variable = Moskauuprising_event_7_end_flag }
+	option = { name = Moskauuprising_event.7.o1
+	    default_option = yes
+		create_country = { tag = SPF origin = c:RKM
+			state = s:STATE_TARTARIA.region_state:RKM
+			state = s:STATE_KURSK.region_state:RKM
+			}
+		}
+	option = { name = Moskauuprising_event.7.o2
+		  	create_country = { tag = SPF origin = c:RKM
+			state = s:STATE_TARTARIA.region_state:RKM
+			state = s:STATE_KURSK.region_state:RKM
+			}
+			play_as = c:SPF
+	} 
+}
+
+Moskauuprising_event.8 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Moskauuprising_event.8.t desc = Moskauuprising_event.8.d flavor = Moskauuprising_event.8.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKM
+		c:RKM = ROOT
+		NOT = { has_variable = Moskauuprising_event_8_end_flag }
+	}
+	immediate = { set_variable = Moskauuprising_event_8_end_flag }
+	option = { name = Moskauuprising_event.8.o1
+	    default_option = yes
+		create_country = { tag = FRR origin = c:RKM
+			state = s:STATE_INGRIA.region_state:RKM
+			state = s:STATE_NOVGOROD.region_state:RKM
+			state = s:STATE_TVER.region_state:RKM
+			}
+		}
+	option = { name = Moskauuprising_event.8.o2
+		  	create_country = { tag = FRR origin = c:RKM
+			state = s:STATE_INGRIA.region_state:RKM
+			state = s:STATE_NOVGOROD.region_state:RKM
+			state = s:STATE_TVER.region_state:RKM
+			}
+			play_as = c:FRR
+	} 
+}

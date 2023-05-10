@@ -1,0 +1,343 @@
+namespace = Speer_event
+
+Speer_event.1 = { ###  Civil War Start Event Speer
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Speer_event.1.t desc = Speer_event.1.d flavor = Speer_event.1.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:SPG
+		c:SPG = ROOT
+		NOT = { has_variable = Speer_event_1_end_flag }
+	}
+	immediate = { set_variable = Speer_event_1_end_flag }
+	option = { name = Speer_event.1.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:SSG
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_HANNOVER.region_state:SPG
+            }
+            add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_ELBE.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_BRUNSWICK.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_WESTPHALIA.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_HESSE.region_state:SPG
+            }
+        }
+	  }
+}
+
+Speer_event.2 = { ###  Civil War Start Event Speer
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Speer_event.2.t desc = Speer_event.2.d flavor = Speer_event.2.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:SPG
+		c:SPG = ROOT
+		NOT = { has_variable = Speer_event_2_end_flag }
+	}
+	immediate = { set_variable = Speer_event_2_end_flag }
+	option = { name = Speer_event.2.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:GNZ
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_HANNOVER.region_state:SPG
+            }
+            add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_ELBE.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_BRUNSWICK.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_WESTPHALIA.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_HESSE.region_state:SPG
+            }
+        }
+	  }
+}
+
+Speer_event.3 = { ###  Civil War Start Event Speer
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Speer_event.3.t desc = Speer_event.3.d flavor = Speer_event.3.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:SPG
+		c:SPG = ROOT
+		NOT = { has_variable = Speer_event_3_end_flag }
+	}
+	immediate = { set_variable = Speer_event_3_end_flag }
+	option = { name = Speer_event.3.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:BGF
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_HANNOVER.region_state:SPG
+            }
+            add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_ELBE.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_BRUNSWICK.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_WESTPHALIA.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_HESSE.region_state:SPG
+            }
+        }
+	  }
+}
+
+Speer_event.4 = { ###  Civil War Start Event Speer
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Speer_event.4.t desc = Speer_event.4.d flavor = Speer_event.4.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:SPG
+		c:SPG = ROOT
+		NOT = { has_variable = Speer_event_4_end_flag }
+	}
+	immediate = { set_variable = Speer_event_4_end_flag }
+	option = { name = Speer_event.4.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:GFF
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:GFF
+                type = conquer_state
+                target_state = s:STATE_HANNOVER.region_state:SPG
+            }
+            add_war_goal = {
+                holder = c:GFF
+                type = conquer_state
+                target_state = s:STATE_ELBE.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GFF
+                type = conquer_state
+                target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GFF
+                type = conquer_state
+                target_state = s:STATE_BRUNSWICK.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GFF
+                type = conquer_state
+                target_state = s:STATE_WESTPHALIA.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GFF
+                type = conquer_state
+                target_state = s:STATE_HESSE.region_state:SPG
+            }
+        }
+	  }
+}
+
+Speer_event.5 = { ###  Civil War Start Event Speer
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Speer_event.5.t desc = Speer_event.5.d flavor = Speer_event.5.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:SPG
+		c:SPG = ROOT
+		NOT = { has_variable = Speer_event_5_end_flag }
+	}
+	immediate = { set_variable = Speer_event_5_end_flag }
+	option = { name = Speer_event.5.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:WEH
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_HANNOVER.region_state:SPG
+            }
+            add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_ELBE.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_BRUNSWICK.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_WESTPHALIA.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_HESSE.region_state:SPG
+            }
+        }
+	  }
+}
+
+Speer_event.6 = { ###  Civil War Start Event Speer
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Speer_event.6.t desc = Speer_event.6.d flavor = Speer_event.6.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:SPG
+		c:SPG = ROOT
+		NOT = { has_variable = Speer_event_6_end_flag }
+	}
+	immediate = { set_variable = Speer_event_6_end_flag }
+	option = { name = Speer_event.6.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:GLF
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_HANNOVER.region_state:SPG
+            }
+            add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_ELBE.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_BRUNSWICK.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_WESTPHALIA.region_state:SPG
+            }
+			add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_HESSE.region_state:SPG
+            }
+        }
+	  }
+}

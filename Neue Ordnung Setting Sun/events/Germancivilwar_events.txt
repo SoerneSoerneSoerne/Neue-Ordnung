@@ -1,0 +1,310 @@
+namespace = Germancivilwar_event
+
+Germancivilwar_event.1 = { ### First Event
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Germancivilwar_event.1.t desc = Germancivilwar_event.1.d flavor = Germancivilwar_event.1.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter1.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/event_germancivilwar"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { has_variable = Germancivilwar_event_1_end_flag }
+	}
+	immediate = { set_variable = Germancivilwar_event_1_end_flag }
+	option = { name = Germancivilwar_event.1.o
+		default_option = yes
+	} 
+}
+
+Germancivilwar_event.2 = { ### Second Event
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Germancivilwar_event.2.t desc = Germancivilwar_event.2.d flavor = Germancivilwar_event.2.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter1.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { has_variable = Germancivilwar_event_2_end_flag }
+	}
+	immediate = { set_variable = Germancivilwar_event_2_end_flag }
+	option = { name = Germancivilwar_event.2.o
+		default_option = yes
+	} 
+}
+
+Germancivilwar_event.3 = { ### Third Event
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Germancivilwar_event.3.t desc = Germancivilwar_event.3.d flavor = Germancivilwar_event.3.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { has_variable = Germancivilwar_event_3_end_flag }
+	}
+	immediate = { set_variable = Germancivilwar_event_3_end_flag }
+	option = { name = Germancivilwar_event.3.o
+		default_option = yes
+	} 
+}
+
+Germancivilwar_event.4 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Germancivilwar_event.4.t desc = Germancivilwar_event.4.d flavor = Germancivilwar_event.4.f
+	event_image = { texture = "gfx/event_pictures/germancivilwar.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { has_variable = Germancivilwar_event_4_end_flag }
+	}
+	immediate = { set_variable = Germancivilwar_event_4_end_flag }
+	option = { name = Germancivilwar_event.4.o1
+	    default_option = yes
+		create_country = { tag = SSG origin = c:NZI
+			state = s:STATE_LUXEMBURG.region_state:NZI
+			state = s:STATE_RHINELAND.region_state:NZI
+			state = s:STATE_ALSACE_LORRAINE.region_state:NZI
+			state = s:STATE_NORTH_RHINE.region_state:NZI
+			}
+		}
+	option = { name = Germancivilwar_event.4.o2
+		  	create_country = { tag = SSG origin = c:NZI
+			state = s:STATE_LUXEMBURG.region_state:NZI
+			state = s:STATE_RHINELAND.region_state:NZI
+			state = s:STATE_ALSACE_LORRAINE.region_state:NZI
+			state = s:STATE_NORTH_RHINE.region_state:NZI
+			}
+			play_as = c:SSG
+	} 
+}
+
+Germancivilwar_event.5 = { ###  Civil War Start Event Speer
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Germancivilwar_event.5.t desc = Germancivilwar_event.5.d flavor = Germancivilwar_event.5.f
+	event_image = { texture = "gfx/event_pictures/germancivilwar.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { has_variable = Germancivilwar_event_5_end_flag }
+	}
+	immediate = { set_variable = Germancivilwar_event_5_end_flag }
+	option = { name = Germancivilwar_event.5.o1
+	    default_option = yes
+		create_country = { tag = SPG origin = c:NZI
+			state = s:STATE_HESSE.region_state:NZI
+			state = s:STATE_WESTPHALIA.region_state:NZI
+			state = s:STATE_BRUNSWICK.region_state:NZI
+			state = s:STATE_HANNOVER.region_state:NZI
+			state = s:STATE_ELBE.region_state:NZI
+			state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:NZI
+			}
+		}
+	option = { name = Germancivilwar_event.5.o2
+		  	create_country = { tag = SPG origin = c:NZI
+			state = s:STATE_HESSE.region_state:NZI
+			state = s:STATE_WESTPHALIA.region_state:NZI
+			state = s:STATE_BRUNSWICK.region_state:NZI
+			state = s:STATE_HANNOVER.region_state:NZI
+			state = s:STATE_ELBE.region_state:NZI
+			state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:NZI
+			}
+			play_as = c:SPG
+	} 
+}
+
+Germancivilwar_event.6 = { ###  Civil War Start Event Wehrmacht
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Germancivilwar_event.6.t desc = Germancivilwar_event.6.d flavor = Germancivilwar_event.6.f
+	event_image = { texture = "gfx/event_pictures/germancivilwar.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { has_variable = Germancivilwar_event_6_end_flag }
+	}
+	immediate = { set_variable = Germancivilwar_event_6_end_flag }
+	option = { name = Germancivilwar_event.6.o1
+	    default_option = yes
+		create_country = { tag = WEH origin = c:NZI
+			state = s:STATE_SOR_TRONDELAG.region_state:NZI
+			state = s:STATE_BORNHOLM.region_state:NZI
+			state = s:STATE_CRIMEA.region_state:NZI
+			state = s:STATE_SILESIA.region_state:NZI
+			state = s:STATE_OST_SUDETENLAND.region_state:NZI
+			state = s:STATE_FRANCONIA.region_state:NZI
+			state = s:STATE_SUDETENLAND.region_state:NZI
+			state = s:STATE_SAXONY.region_state:NZI
+			}
+		}
+	option = { name = Germancivilwar_event.6.o2
+		  	create_country = { tag = WEH origin = c:NZI
+			state = s:STATE_SOR_TRONDELAG.region_state:NZI
+			state = s:STATE_BORNHOLM.region_state:NZI
+			state = s:STATE_CRIMEA.region_state:NZI
+			state = s:STATE_SILESIA.region_state:NZI
+			state = s:STATE_OST_SUDETENLAND.region_state:NZI
+			state = s:STATE_FRANCONIA.region_state:NZI
+			state = s:STATE_SUDETENLAND.region_state:NZI
+			state = s:STATE_SAXONY.region_state:NZI
+			}
+			play_as = c:WEH
+	} 
+}
+
+Germancivilwar_event.7 = { ###  Civil War Start Event Goebbels
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Germancivilwar_event.7.t desc = Germancivilwar_event.7.d flavor = Germancivilwar_event.7.f
+	event_image = { texture = "gfx/event_pictures/germancivilwar.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { has_variable = Germancivilwar_event_7_end_flag }
+	}
+	immediate = { set_variable = Germancivilwar_event_7_end_flag }
+	option = { name = Germancivilwar_event.7.o1
+	    default_option = yes
+		create_country = { tag = GNZ origin = c:NZI
+			state = s:STATE_ANHALT.region_state:NZI
+			state = s:STATE_BRANDENBURG.region_state:NZI
+			state = s:STATE_MECKLENBURG.region_state:NZI
+			state = s:STATE_POMERANIA.region_state:NZI
+			}
+		}
+	option = { name = Germancivilwar_event.7.o2
+		  	create_country = { tag = GNZ origin = c:NZI
+			state = s:STATE_ANHALT.region_state:NZI
+			state = s:STATE_BRANDENBURG.region_state:NZI
+			state = s:STATE_MECKLENBURG.region_state:NZI
+			state = s:STATE_POMERANIA.region_state:NZI
+			}
+			play_as = c:GNZ
+	} 
+}
+
+Germancivilwar_event.8 = { ###  Civil War Start Event Goering
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Germancivilwar_event.8.t desc = Germancivilwar_event.8.d flavor = Germancivilwar_event.8.f
+	event_image = { texture = "gfx/event_pictures/germancivilwar.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { has_variable = Germancivilwar_event_8_end_flag }
+	}
+	immediate = { set_variable = Germancivilwar_event_8_end_flag }
+	option = { name = Germancivilwar_event.8.o1
+	    default_option = yes
+		create_country = { tag = GLF origin = c:NZI
+			state = s:STATE_BIALYSTOK.region_state:NZI
+			state = s:STATE_EAST_PRUSSIA.region_state:NZI
+			state = s:STATE_WEST_PRUSSIA.region_state:NZI
+			state = s:STATE_POSEN.region_state:NZI
+			state = s:STATE_PLOCK.region_state:NZI
+			state = s:STATE_LODZ.region_state:NZI
+			}
+		}
+	option = { name = Germancivilwar_event.8.o2
+		  	create_country = { tag = GLF origin = c:NZI
+			state = s:STATE_BIALYSTOK.region_state:NZI
+			state = s:STATE_EAST_PRUSSIA.region_state:NZI
+			state = s:STATE_WEST_PRUSSIA.region_state:NZI
+			state = s:STATE_POSEN.region_state:NZI
+			state = s:STATE_PLOCK.region_state:NZI
+			state = s:STATE_LODZ.region_state:NZI
+			}
+			play_as = c:GLF
+	} 
+}
+
+Germancivilwar_event.9 = { ###  Civil War Start Event Bormann
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Germancivilwar_event.9.t desc = Germancivilwar_event.9.d flavor = Germancivilwar_event.9.f
+	event_image = { texture = "gfx/event_pictures/germancivilwar.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { has_variable = Germancivilwar_event_9_end_flag }
+	}
+	immediate = { set_variable = Germancivilwar_event_9_end_flag }
+	option = { name = Germancivilwar_event.9.o1
+	    default_option = yes
+		create_country = { tag = BGF origin = c:NZI
+			state = s:STATE_BAVARIA.region_state:NZI
+			state = s:STATE_SLOVENIA.region_state:NZI
+			state = s:STATE_STYRIA.region_state:NZI
+			state = s:STATE_AUSTRIA.region_state:NZI
+			state = s:STATE_TYROL.region_state:NZI
+			}
+		}
+	option = { name = Germancivilwar_event.9.o2
+		  	create_country = { tag = BGF origin = c:NZI
+			state = s:STATE_BAVARIA.region_state:NZI
+			state = s:STATE_SLOVENIA.region_state:NZI
+			state = s:STATE_STYRIA.region_state:NZI
+			state = s:STATE_AUSTRIA.region_state:NZI
+			state = s:STATE_TYROL.region_state:NZI
+			}
+			play_as = c:BGF
+	} 
+}
+
+Germancivilwar_event.10 = { ###  Civil War Start Event Freedom
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Germancivilwar_event.10.t desc = Germancivilwar_event.10.d flavor = Germancivilwar_event.10.f
+	event_image = { texture = "gfx/event_pictures/germancivilwar.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:NZI
+		c:NZI = ROOT
+		NOT = { has_variable = Germancivilwar_event_10_end_flag }
+	}
+	immediate = { set_variable = Germancivilwar_event_10_end_flag }
+	option = { name = Germancivilwar_event.10.o1
+	    default_option = yes
+		create_country = { tag = GFF origin = c:NZI
+			state = s:STATE_WURTTEMBERG.region_state:NZI
+			state = s:STATE_BADEN.region_state:NZI
+			}
+		}
+	option = { name = Germancivilwar_event.10.o2
+		  	create_country = { tag = GFF origin = c:NZI
+			state = s:STATE_WURTTEMBERG.region_state:NZI
+			state = s:STATE_BADEN.region_state:NZI
+			}
+			play_as = c:GFF
+	} 
+}

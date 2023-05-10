@@ -1,0 +1,343 @@
+namespace = Goering_event
+
+Goering_event.1 = { ###  Civil War Start Event Goering
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Goering_event.1.t desc = Goering_event.1.d flavor = Goering_event.1.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:GLF
+		c:GLF = ROOT
+		NOT = { has_variable = Goering_event_1_end_flag }
+	}
+	immediate = { set_variable = Goering_event_1_end_flag }
+	option = { name = Goering_event.1.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:SSG
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_POSEN.region_state:GLF
+            }
+            add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_LODZ.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_PLOCK.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_WEST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_EAST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:SSG
+                type = conquer_state
+                target_state = s:STATE_BIALYSTOK.region_state:GLF
+            }
+        }
+	  }
+}
+
+Goering_event.2 = { ###  Civil War Start Event Goering
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Goering_event.2.t desc = Goering_event.2.d flavor = Goering_event.2.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:GLF
+		c:GLF = ROOT
+		NOT = { has_variable = Goering_event_2_end_flag }
+	}
+	immediate = { set_variable = Goering_event_2_end_flag }
+	option = { name = Goering_event.2.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:SPG
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:SPG
+                type = conquer_state
+                target_state = s:STATE_POSEN.region_state:GLF
+            }
+            add_war_goal = {
+                holder = c:SPG
+                type = conquer_state
+                target_state = s:STATE_LODZ.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:SPG
+                type = conquer_state
+                target_state = s:STATE_PLOCK.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:SPG
+                type = conquer_state
+                target_state = s:STATE_WEST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:SPG
+                type = conquer_state
+                target_state = s:STATE_EAST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:SPG
+                type = conquer_state
+                target_state = s:STATE_BIALYSTOK.region_state:GLF
+            }
+        }
+	  }
+}
+
+Goering_event.3 = { ###  Civil War Start Event Goering
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Goering_event.3.t desc = Goering_event.3.d flavor = Goering_event.3.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:GLF
+		c:GLF = ROOT
+		NOT = { has_variable = Goering_event_3_end_flag }
+	}
+	immediate = { set_variable = Goering_event_3_end_flag }
+	option = { name = Goering_event.3.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:BGF
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_POSEN.region_state:GLF
+            }
+            add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_LODZ.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_PLOCK.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_WEST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_EAST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:BGF
+                type = conquer_state
+                target_state = s:STATE_BIALYSTOK.region_state:GLF
+            }
+        }
+	  }
+}
+
+Goering_event.4 = { ###  Civil War Start Event Goering
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Goering_event.4.t desc = Goering_event.4.d flavor = Goering_event.4.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:GLF
+		c:GLF = ROOT
+		NOT = { has_variable = Goering_event_4_end_flag }
+	}
+	immediate = { set_variable = Goering_event_4_end_flag }
+	option = { name = Goering_event.4.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:GNZ
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_POSEN.region_state:GLF
+            }
+            add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_LODZ.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_PLOCK.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_WEST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_EAST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:GNZ
+                type = conquer_state
+                target_state = s:STATE_BIALYSTOK.region_state:GLF
+            }
+        }
+	  }
+}
+
+Goering_event.5 = { ###  Civil War Start Event Goering
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Goering_event.5.t desc = Goering_event.5.d flavor = Goering_event.5.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:GLF
+		c:GLF = ROOT
+		NOT = { has_variable = Goering_event_5_end_flag }
+	}
+	immediate = { set_variable = Goering_event_5_end_flag }
+	option = { name = Goering_event.5.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:WEH
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_POSEN.region_state:GLF
+            }
+            add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_LODZ.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_PLOCK.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_WEST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_EAST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:WEH
+                type = conquer_state
+                target_state = s:STATE_BIALYSTOK.region_state:GLF
+            }
+        }
+	  }
+}
+
+Goering_event.6 = { ###  Civil War Start Event Goering
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Goering_event.6.t desc = Goering_event.6.d flavor = Goering_event.6.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:GLF
+		c:GLF = ROOT
+		NOT = { has_variable = Goering_event_6_end_flag }
+	}
+	immediate = { set_variable = Goering_event_6_end_flag }
+	option = { name = Goering_event.6.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:GLF
+            type = dp_revolution
+            war = yes
+
+            add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_POSEN.region_state:GLF
+            }
+            add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_LODZ.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_PLOCK.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_WEST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_EAST_PRUSSIA.region_state:GLF
+            }
+			add_war_goal = {
+                holder = c:GLF
+                type = conquer_state
+                target_state = s:STATE_BIALYSTOK.region_state:GLF
+            }
+        }
+	  }
+}

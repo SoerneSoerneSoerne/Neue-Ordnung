@@ -1,0 +1,115 @@
+namespace = Ostlanduprising_event
+
+Ostlanduprising_event.3 = { ###  Civil War Start Event Polishuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Ostlanduprising_event.3.t desc = Ostlanduprising_event.3.d flavor = Ostlanduprising_event.3.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKO
+		c:RKO = ROOT
+		NOT = { has_variable = Ostlanduprising_event_3_end_flag }
+	}
+	immediate = { set_variable = Ostlanduprising_event_3_end_flag }
+	option = { name = Ostlanduprising_event.3.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:UBD
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Ostlanduprising_event.2 = { ###  Civil War Start Event Polishuprising
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Ostlanduprising_event.2.t desc = Ostlanduprising_event.2.d flavor = Ostlanduprising_event.2.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKO
+		c:RKO = ROOT
+		NOT = { has_variable = Ostlanduprising_event_2_end_flag }
+	}
+	immediate = { set_variable = Ostlanduprising_event_2_end_flag }
+	option = { name = Ostlanduprising_event.2.o1
+	    default_option = yes
+		create_diplomatic_play = {
+    name = cow_napoleonhandel_warname
+            
+        target_country = c:BYE
+            type = dp_revolution
+            war = yes
+        }
+	  }
+}
+
+Ostlanduprising_event.1 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Ostlanduprising_event.1.t desc = Ostlanduprising_event.1.d flavor = Ostlanduprising_event.1.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKO
+		c:RKO = ROOT
+		NOT = { has_variable = Ostlanduprising_event_1_end_flag }
+	}
+	immediate = { set_variable = Ostlanduprising_event_1_end_flag }
+	option = { name = Ostlanduprising_event.1.o1
+	    default_option = yes
+		create_country = { tag = BYE origin = c:RKO
+			state = s:STATE_BREST.region_state:RKO
+			state = s:STATE_MINSK.region_state:RKO
+			state = s:STATE_ORSHA.region_state:RKO
+			}
+		}
+	option = { name = Ostlanduprising_event.1.o2
+		  	create_country = { tag = BYE origin = c:RKO
+			state = s:STATE_BREST.region_state:RKO
+			state = s:STATE_MINSK.region_state:RKO
+			state = s:STATE_ORSHA.region_state:RKO
+			}
+			play_as = c:BYE
+	} 
+}
+
+Ostlanduprising_event.4 = { ### Civil War Start Event SS
+	type = country_event placement = ROOT
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	title = Ostlanduprising_event.4.t desc = Ostlanduprising_event.4.d flavor = Ostlanduprising_event.4.f
+	event_image = { texture = "gfx/event_pictures/voelkischerbeobachter3.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+	duration = 3
+	trigger = {
+		exists = c:RKO
+		c:RKO = ROOT
+		NOT = { has_variable = Ostlanduprising_event_4_end_flag }
+	}
+	immediate = { set_variable = Ostlanduprising_event_4_end_flag }
+	option = { name = Ostlanduprising_event.4.o1
+	    default_option = yes
+		create_country = { tag = UBD origin = c:RKO
+			state = s:STATE_ESTONIA.region_state:RKO
+			state = s:STATE_LATVIA.region_state:RKO
+			}
+		}
+	option = { name = Ostlanduprising_event.4.o2
+		  	create_country = { tag = UBD origin = c:RKO
+			state = s:STATE_ESTONIA.region_state:RKO
+			state = s:STATE_LATVIA.region_state:RKO
+			}
+			play_as = c:UBD
+	} 
+}
